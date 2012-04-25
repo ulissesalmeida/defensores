@@ -11,7 +11,7 @@ Pontos gastos em Força(F) representa que o personagem tem treinamento em combat
 \item[FA] Para combate corpo-a-corpo a Força é a principal contribuídora para para sua Força de Ataque, que será: 
 \[ FA = (F \times 2) + Habilidade \]
 Personagens sem pontos em força e quer lutar corpo-a-corpo, recebe -4 em sua FA. {\bf Exemplo:} Um personagem com F3 e H4, a FA final será 10(\(3 \times 2 + 4 \)). 
-\item[Peso] Para cada ponto em Força, seu personagem é capaz de carregar 100kg. Personagens com F0, movem 50kg. Para mover algo no limite do peso da sua força não é necessário testes, para mover coisas além da sua força, sua velociade é reduzia a 1/4 e é necessário passar em teste de dificuldade (3 + Pontos de Força necessário). {\bf Exemplo:} Para mover algo de 700kg, é necessário passar em um teste de dificuldade 10 (\(3 + 7\)).
+\item[Peso] Para cada ponto em Força, seu personagem é capaz de carregar 100kg. Personagens com F0, movem 50kg. Para mover algo no limite do peso da sua força não é necessário testes, para mover coisas além da sua força, sua velociade é reduzia a 1/4 e é necessário passar em teste de dificuldade (4 + Pontos de Força necessário). {\bf Exemplo:} Para mover algo de 700kg, é necessário passar em um teste de dificuldade 11 (\(4 + 7\)).
 \item[Manobras] Há várias manobras e vantagens especiais exclusivas para personagens que lutam corpo-a-corpo, veja mais no capítulo Regras de combate(pag. \pageref{ch:combat})
 \end{description}
 
@@ -21,7 +21,7 @@ No sistema 3D\&T o personagem era capaz de carregar muito mais peso com seus pon
 
 \section{Habilidade}
 
-Habilidade(H) é a destreza e agilidade do seu personagem, esse atributo ajuda no combate em todos aspectos além um dos atributos principais para uso de perícias. Além de ser útil para testes que exigem esquiva, movimento rápido, acrobacias, saltos, etc.
+Habilidade(H) é a destreza e agilidade do seu personagem, esse atributo ajuda no combate em todos aspectos, é um dos atributos principais para uso de perícias, além de ser útil para testes que exigem esquiva, movimento rápido, acrobacias, saltos, etc.
 
 \begin{description}
 \item[FA] Tanto para combate corpo-a-corpo e combate a distância é somado a FA final. Portanto, em ataques corpo-a-corpo:
@@ -35,14 +35,18 @@ Existem ataques que ignoram Armadura, restando apenas a sua Habilidade para te d
 \[ Velocidade = (H \times 10m/s) \]
 Personagens com H0, movem a 5m\/s. Para longas corridas ou longas jornadas, depende também da resistência do personagem, veja no capítulo "A Aventura"(pág. \pageref{ch:adventure}) 
 \item[Salto] A dois movimentos clássicos para salto, salto somente na vertical e o salto  horizontal. Para o salto somente na vertical, considere que o alcance máximo em metros é: 
-\[ Alcance do Salto Vertical = Velocidade/2 \] 
-Para o salto horizontal em metros, considere 
-\[ Alcance Horizontal do Salto Horizontal =  (Alcance do Salto Vertical /2) + (Velocidade/2) \] 
-\[ Alcance Vertical do Salto Horizontal =  Alcance do Salto Vertical/2 \].
-\item[Perícias] Habilidade é um dos atributos chaves para várias perícias, essas perícias o personagem pode tentar usa-las, mesmo que não tenha as comprado, com um redutor de -3 em seu teste. Algumas perícias, só é permitido usá-las se houver um tutor ou treinamento nelas.
-\item[Testes] Testes que exigem movimento rápido e preciso, esse é o atributo! A dificuldade dos devem ser \( 3 + H \), sendo H o nível de habilidade necessária para realizar a tarefa sem precisar realizar testes.
-\item[Manobras] A principal manobra de combate que usa Habilidade é esquiva. Um personagem pode tentar se esquivar de um golpe o número de vezes igual a sua habilidade em uma rodada. O personagem para se esquivar de um golpe, deve ter Habilidade no momento maior que seu oponente. Veja mais sobre esquiva no capítulo "Regras de Combate" (pag. \pageref{ch:combat}).
-\item[Ataque múltiplos] Um personagem com alto valor em habilidade, pode ter mais de um ataque em uma mesma rodada. Veja mais em "Regras de Combate" (pag. \pageref{ch:combat}).
+\[ V/2 \] 
+Sendo V, Velocidade.
+Para o alcance horizontal do salto horizontal em metros, considere:
+\[ (AV / 2) + (V/2) \]
+Sendo V, Velocidade e AV, Alcance do Salto Vertical.
+Para o alcance vertical do salto horizontal em metros, considere:
+\[ AV/2 \]
+Sendo AV, Alcance do Salto Vertical.
+\item[Perícias] Habilidade é um dos atributos chaves para várias perícias, essas perícias o personagem pode tentar usa-las mesmo que não as tenha, com um redutor de -3 em seu teste. Algumas perícias, só é permitido usá-las se houver um tutor ou treinamento nelas.
+\item[Testes] Testes que exigem movimento rápido, preciso ou acrobacias, esse é o atributo! A dificuldade deve ser \( 4 + H \), sendo H o nível de habilidade necessária para realizar a tarefa sem precisar realizar testes.
+\item[Manobras] A manobra mais importante que usa Habilidade como atributo é a Esquiva. Para usar Esquiva contra um ataque, o personagem deve ter Habilidade superior a do oponente. o número de vezes que um personagem pode tentar se esquivar de um ataque em uma rodada de combate é igual o número da sua Habilidade. Veja mais sobre esquiva no capítulo "Regras de Combate" (pag. \pageref{ch:combat}).
+\item[Ataque Múltiplo] Um personagem com alto valor em habilidade, pode ter mais de um ataque em uma mesma rodada. Veja mais em "Regras de Combate" (pag. \pageref{ch:combat}).
 \end{description}
 
 \begin{framed}
@@ -50,12 +54,73 @@ No sistema 3D\&T Habilidade era o atributo mais importante e desbalanceado do jo
 \end{framed}
 
 \section{Resistência}
+O atributo Resistência(R) representa condição física do seu personagem. Um alto valor em Resistência permite o personagem ter mais Pontos de Vida, Fadiga e resistir a diversas doenças, venenos, dores e efeitos mágicos. Enfim, o atributo Resistência garante que o seu personagem sobreviva a diversas situações.
+
+\begin{description}
+\item[PVs] Resistência contribui diretamente com os Pontos de Vida do Personagem, sendo:
+\[PVs = R \times 5 \]
+Personagens com R0, possuem 1PV.
+\item[Fadiga] Cada ponto de R equivale a um ponto de Fadiga.
+\item[Recuperação] Para cada dia de repouso o número de PVs recuperados é igual o seu valor de R. 
+\item[Testes] Muitas situações exigem que o personagem tenha uma condição física exemplar. Resistência é útil para resistir venenos, efeitos mágicos, dores, mais tempo acordado, caminhar e correr por mais tempo, etc.
+\end{description}
+
+\begin{framed}
+Para Resistência, comparando ao sistema 3D\&T, as diferênças são minimas. Por isso não tenho muito o que comentar.
+\end{framed}
 
 \section{Mente}
+O atributo Mente(M), representa a raciocinio, a sabedoria, a memória, a força de vontade, etc. Um personagem com alto valor em Mente, representa as pessoas mais brilhantes do seu tempo. O atributo Mente garante Pontos de Magia, usar diversas perícias, resistir a controle mental e escapar de trapaças ou truques.
+
+\begin{description}
+\item[PMs] Mente contribui diretamente com os Pontos de Magia do Personagem, sendo:
+\[PMs = M \times 5 \]
+Personagens com M0, possuem 1PM.
+\item[Perícias] Mente é um dos atributos chaves para várias perícias, essas perícias o personagem pode tentar usa-las mesmo que não as tenha com um redutor de -3 em seu teste. Algumas perícias, só é permitido usá-las se houver um tutor ou treinamento nelas.
+\item[Magias] O poder das magias são influenciadas diretamente pelo valor do seu atributo Mente. Magos poderosos possuem um alto valor nesse atributo.
+\item[Testes] Situações que exigem raciocinio, percepção, memória, força de vontade ou sabedoria, Mente é o atributo adequado para o teste.
+\end{description}
+
+\begin{framed}
+Acredito que esse é o atributo mais polêmico e desejado por muitos jogadores de 3D\&T. Como essa atualização tem a intenção de trazer uma real adição ao jogo, um atributo que separe a agilidade de inteligência se faz necessário. Em 3D\&T tudo se resumia a Habilidade: combate, magia, testes e perícia. Um personagem para ser um bom mago tinha que ter Habilidade alta, mas ao mesmo tempo que ele se tornava um bom mago, ele também se tornava um acrobata épico e ótimo lutador, assim os personagens tendiam sempre ter Habilidade alta. Com essa atualização, Habilidade perde o centro da atenção, permitindo maior variadade de personagem e descentralização de compras em um único atributo.
+\end{framed}
 
 \section{Armadura}
+O atributo Armadura(A) contribui diretamente com a defesa do personagem. Mesmo em situações em que seu personagem se encontra indefeso, a Armadura está lá para protege-lo. O atributo Armadura não necessariamente significa que seu personagem vista uma armadura, pode ser apenas amuleto de proteção, ou bracelete, ou até mesmo sua pele que é mais resistente que o normal.
+
+\begin{description}
+\item[FD] Armadura contribui principalmente para sua Força de Defesa, sendo:
+\[ FD = (A \times 2) + H \]
+Personagens com A0, não sofrem redutor em FD, apenas não tem bônus em Armadura.
+\item[Passiva] Em algumas situações o personagem não pode se mover, ou seja, não pode usar sua Habilidade na somatoria do bônus da FD, entretanto, pode continuar usando o bônus da Armadura normalmente.
+\item[Manobras] Algumas manobras e vantagens, dependem exclusivamente da Armadura para aumentar a proteção do personagem. 
+\end{description}
+
+\begin{framed}
+Armadura sempre foi o patinho feio dos atributos principais em 3D\&T, porque não contribuia muito na proteção personagem, apesar de possuir algumas vantagens que poderia valer a pena. Nessa versão, ela se torna o principal atributo para proteção, além disso algumas vantagens que usavam habilidade para proteção, usará Armadura no lugar.
+\end{framed}
 
 \section{Poder de Fogo}
+
+Poder de Fogo(PdF) é o atributo que representa o ataque a distância do personagem. Pode ser um revolver, bolas de fogo ou ki, metralhadora, raios, etc. O visual do seu ataque a distância só necessita da aprovação do Mestre. Resumindo, Poder de Fogo determina a força e o alcance do ataque a distância. 
+
+\begin{description}
+\item[FA] Poder de Fogo contribui principalmente para Força de Ataque a distância, mas não tem problema algum usar em combate corpo-a-corpo. Sendo:
+\[ FA = (PdF \times 2) + H \]
+Personagens com PdF 0, recebem -4 em sua FA a distância.
+\item[Alcance]
+O alcance do ataque a distância em metros será:
+\[ Alcance = PdF \times 20 \]
+Mesmo que o PdF de um personagem não seja suficiente para atingir a distância desejada, ele pode realizar o ataque com redutor na FA. O redutor é de -2 na FA, para cada pontos de diferença para o PdF necessário. Exemplo: Um personagem com PdF2 a quer atacar um personagem a 80 metros, porém para atingir a 80 metros sem redutor é necessário PdF 4, logo diferença é 2 pontos, portanto o redutor na FA será de -4.
+\item[Testes]
+Testes que necessitem verificar a pontaria do personagem, Poder Fogo é o atributo correto a ser testado.
+\item[Manobras]
+Existem manobras e vantagens que usam exclusivamente Poder de Fogo que ajudam combater melhor a uma distância segura.
+\end{description}
+
+\begin{framed}
+Também não houve muitas mudanças, o alcance do ataque a distância foi reduzido e adicionado uma formula simples de calcular sem precisar de muita consultas. Agora assim como Força, Poder de Fogo é mais importante que Habilidade para FA.
+\end{framed}
 
 \section{Atributos Secundários}
 
