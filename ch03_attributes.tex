@@ -5,29 +5,49 @@ Os atributos são extremamente importantes pois determinam o que o personagem é
 
 \section{Força}
 
-Pontos gastos em Força(F) representa que o personagem tem treinamento em combate corpo-a-corpo, ou seja, para combates de curta distância é sua principal fonte de dano, manobras e ainda determina a quantidade de kilos que ele é capaz de mover.
+Pontos gastos em Força(F) representa que o personagem tem treinamento em combate corpo-a-corpo, ou seja, para combates de curta distância é sua principal fonte de dano, manobras e ainda determina a quantidade de kilos que ele é capaz de mover. O atributo Força não precisa ser necessariamente musculos, pode ser uma técnica de espada antiga que com seu golpe é possível mover coisas sem corta-las.
 
 \begin{description}
-\item[FA] Para combates corpo-a-corpo a Força é a principal contribuídora para para sua Força de Ataque, onde sua FA final será: (FX2) + Habilidade. Personagens sem pontos em força e quer lutar corpo-a-corpo, recebe -4 em sua FA. Personagem com F3 e H4, a FA final será 10(3*2 + 4). 
-\item[Peso] Para cada ponto em Força, seu personagem é capaz de carregar 100kg. Personagens com F0, movem 50kg. Para mover algo no limite do peso da sua força não é necessário testes, para mover coisas além da sua força, sua velociade é reduzia a 1/4 e é necessário passar em teste de dificuldade (3 + Pontos de Força necessário). Exemplo: Para mover algo de 700kg, é necessário passar em um teste de dificuldade 10 (3 + 7).
+\item[FA] Para combate corpo-a-corpo a Força é a principal contribuídora para para sua Força de Ataque, que será: 
+\[ FA = (F \times 2) + Habilidade \]
+Personagens sem pontos em força e quer lutar corpo-a-corpo, recebe -4 em sua FA. {\bf Exemplo:} Um personagem com F3 e H4, a FA final será 10(\(3 \times 2 + 4 \)). 
+\item[Peso] Para cada ponto em Força, seu personagem é capaz de carregar 100kg. Personagens com F0, movem 50kg. Para mover algo no limite do peso da sua força não é necessário testes, para mover coisas além da sua força, sua velociade é reduzia a 1/4 e é necessário passar em teste de dificuldade (3 + Pontos de Força necessário). {\bf Exemplo:} Para mover algo de 700kg, é necessário passar em um teste de dificuldade 10 (\(3 + 7\)).
 \item[Manobras] Há várias manobras e vantagens especiais exclusivas para personagens que lutam corpo-a-corpo, veja mais no capítulo Regras de combate(pag. \pageref{ch:combat})
 \end{description}
 
-\fbox{No sistema 3D\&T o personagem era capaz de carregar muito mais peso com seus pontos em força, porém era difícil de controlar e lembrar. Com 100kg por força, o nível de poder é menor e fácil de lembrar, pois basta multiplicar o valor da força por 100kg. F3 é 300kg a capacidade, F8 é 800kg, no sistema antigo quanto era capacidade para F12 mesmo? Tem que consultar o manual, desse jeito dispensa o manual e os personagens são mais fracos.}
+\begin{framed}
+No sistema 3D\&T o personagem era capaz de carregar muito mais peso com seus pontos em força, porém era difícil de controlar e lembrar. Com 100kg por força, o nível de poder é menor e fácil de lembrar, pois basta multiplicar o valor da força por 100kg. F3 é 300kg a capacidade, F8 é 800kg, no sistema antigo quanto era capacidade para F12 mesmo? Tem que consultar o manual, desse jeito dispensa o manual e é mais fácil de prever o que os personagens são e serão capazes.
+\end{framed}
 
 \section{Habilidade}
 
-Habilidade(H) é a destreza e agilidade do seu personagem, esse atributo ajuda no combate em todos aspectos além um dos atributos principais para uso de perícias. Todo teste que exige esquiva, movimento rápido, acrobacias, saltos e etc, esse é o atributo chave.
+Habilidade(H) é a destreza e agilidade do seu personagem, esse atributo ajuda no combate em todos aspectos além um dos atributos principais para uso de perícias. Além de ser útil para testes que exigem esquiva, movimento rápido, acrobacias, saltos, etc.
 
 \begin{description}
-\item[FA] Tanto para combates corpo-a-corpo e combate a distância, a Habilidade contribui! onde sua FA final será: (FX2) + Habilidade. Personagens sem pontos em força e quer lutar corpo-a-corpo, recebe -4 em sua FA. Personagem com F3 e H4, a FA final será 10(3*2 + 4). 
-\item[FD] Tanto para combates corpo-a-corpo e combate a distância, a Habilidade contribui! onde sua FA final será: (FX2) + Habilidade. Personagens sem pontos em força e quer lutar corpo-a-corpo, recebe -4 em sua FA. Personagem com F3 e H4, a FA final será 10(3*2 + 4). 
-\item[Velocidade] Para cada ponto em Força, seu personagem é capaz de carregar 100kg. Personagens com F0, movem 50kg. Para mover algo no limite do peso da sua força não é necessário testes, para mover coisas além da sua força, sua velociade é reduzia a 1/4 e é necessário passar em teste de dificuldade (3 + Pontos de Força necessário). Exemplo: Para mover algo de 700kg, é necessário passar em um teste de dificuldade 10 (3 + 7).
-\item[Salto] Há várias manobras e vantagens especiais exclusivas para personagens que lutam corpo-a-corpo, veja mais no capítulo Regras de combate(pag. \pageref{ch:combat})
-\item[Perícias] Há várias manobras e vantagens especiais exclusivas para personagens que lutam corpo-a-corpo, veja mais no capítulo Regras de combate(pag. \pageref{ch:combat})
-\item[Testes] Há várias manobras e vantagens especiais exclusivas para personagens que lutam corpo-a-corpo, veja mais no capítulo Regras de combate(pag. \pageref{ch:combat})
-\item[Manobras] Há várias manobras e vantagens especiais exclusivas para personagens que lutam corpo-a-corpo, veja mais no capítulo Regras de combate(pag. \pageref{ch:combat})
+\item[FA] Tanto para combate corpo-a-corpo e combate a distância é somado a FA final. Portanto, em ataques corpo-a-corpo:
+\[ FA = (F \times 2) + H \]
+A distância:
+\[ FA = (PdF \times 2) + H \]
+\item[FD] Além de contribuir nas lutas corpo-a-copo, Habilidade também é somada a defesa:
+\[ FD = (A \times 2) + H \]
+Existem ataques que ignoram Armadura, restando apenas a sua Habilidade para te defender em sua FD.
+\item[Velocidade] Habilidade contribui diretamente na movimentação do personagem durante o combate ou curtas distâncias que será
+\[ Velocidade = (H \times 10m/s) \]
+Personagens com H0, movem a 5m\/s. Para longas corridas ou longas jornadas, depende também da resistência do personagem, veja no capítulo "A Aventura"(pág. \pageref{ch:adventure}) 
+\item[Salto] A dois movimentos clássicos para salto, salto somente na vertical e o salto  horizontal. Para o salto somente na vertical, considere que o alcance máximo em metros é: 
+\[ Alcance do Salto Vertical = Velocidade/2 \] 
+Para o salto horizontal em metros, considere 
+\[ Alcance Horizontal do Salto Horizontal =  (Alcance do Salto Vertical /2) + (Velocidade/2) \] 
+\[ Alcance Vertical do Salto Horizontal =  Alcance do Salto Vertical/2 \].
+\item[Perícias] Habilidade é um dos atributos chaves para várias perícias, essas perícias o personagem pode tentar usa-las, mesmo que não tenha as comprado, com um redutor de -3 em seu teste. Algumas perícias, só é permitido usá-las se houver um tutor ou treinamento nelas.
+\item[Testes] Testes que exigem movimento rápido e preciso, esse é o atributo! A dificuldade dos devem ser \( 3 + H \), sendo H o nível de habilidade necessária para realizar a tarefa sem precisar realizar testes.
+\item[Manobras] A principal manobra de combate que usa Habilidade é esquiva. Um personagem pode tentar se esquivar de um golpe o número de vezes igual a sua habilidade em uma rodada. O personagem para se esquivar de um golpe, deve ter Habilidade no momento maior que seu oponente. Veja mais sobre esquiva no capítulo "Regras de Combate" (pag. \pageref{ch:combat}).
+\item[Ataque múltiplos] Um personagem com alto valor em habilidade, pode ter mais de um ataque em uma mesma rodada. Veja mais em "Regras de Combate" (pag. \pageref{ch:combat}).
 \end{description}
+
+\begin{framed}
+No sistema 3D\&T Habilidade era o atributo mais importante e desbalanceado do jogo. Tão desbalanceado, que as últimas sessões que tive os jogadores investiam mais em Habilidade do que qualquer outro atributo. Pois além de ser o atributo chave de TODAS as perícias, representava também a inteligência, como também tinha o mesmo valor de combate para defesa e ataque. Visivelmente, ninguém seria bobo de não gastar vários pontos em habilidade, gerando personagens muito parecidos e com as mesmas estratégias. Por isso achei importante reduzir sua importância para equilibrar sua utilidade com outros atributos.
+\end{framed}
 
 \section{Resistência}
 
