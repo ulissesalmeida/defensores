@@ -188,7 +188,35 @@ No 3D\&T clássico, no lugar de PAs, os jogadores tinham que gastar Pontos de Ex
 
 \subsection{Força de Ataque}
 
+Força de Ataque é o principal parâmetro para medir o ataque de alguma coisa contra a defesa de outra coisa. Seu cálculo é simples:
+
+\[ FA = (F \times 2) + H \]
+
+Ou:
+
+\[ FA = (PdF \times 2) + H \]
+
+Porém pode variar devido algum bônus de alguma vantagem ou por ser alguma magia. Depois do cálculo da FA, rola-se um dado(1d) e soma o valor a FA. Então:
+
+\[ FAfinal = FA + 1d \]
+
+Se o resultado da rolagem do dado for um 6, então o ataque é um critíco e a FA final é calculada diferente:
+
+\[ FAfinal =  FA + (FA/2) + 6 \]
+
+Ou seja, um critico aumenta em 50\% a FA, não deve incluir o  resultado do dado, mas pode incluir os bônus de vantagens, itens, magias, etc. {\bf Exemplo: } Um personagem com F3 e H2, sua FA será 8 (\(F \times 2) + H(\)), ele rola um dado e o resultado foi 2, então sua FA final será 10 (\( FA + 1d \)). Para o mesmo caso, se ele tivesse tirado um 6, então foi um critico, assim sua FA final será 18 (\(FA + (FA/2) + 6\)).
+
+\begin{framed}
+Além da já comentada dobrada Força e Poder de Fogo na FA, a maneira de calcular o critíco mudou. No antigo 3D\&T apenas o atributo chave era dobrado, em Defensores todos os bônus de atributos e vantagens ajudam mas o aumento é em escala menor (50\%).
+\end{framed}
+
 \subsection{Força de Defesa}
+
+Força de Defesa é o principal parâmetro para medir a defesa de alguma coisa contra o ataque de outra coisa. Seu cálculo é simples (Copy paste?):
+
+\[ FD = (A \times 2) + H \]
+
+O resto funciona praticamente igual a FA, rola-se um dado para ter a FD final, se houver um 6, calcula-se o critico da mesma maneira.
 
 \subsection{Fadiga}
 
