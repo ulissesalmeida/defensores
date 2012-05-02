@@ -128,7 +128,7 @@ Força, Habilidade, Resistência, Mente, Armadura e Poder de Fogo sãos o princi
 
 \subsection{Pontos de Vida}
 
-Pontos de Vida(PVs) representam a vitalidade do personagem, ou seja, o quanto seu personagem resistirá a danos até ficar incapacitado de lutar. Os pontos de vida limite do personagem são calculados a partir da Resistência (R) do personagem e pode ter bônus(B) adiquirido de alguma vantagem, item mágico e etc. O cálculo é basicamente:
+Pontos de Vida(PV) representam a vitalidade do personagem, ou seja, o quanto seu personagem resistirá a danos até ficar incapacitado de lutar. Os pontos de vida limite do personagem são calculados a partir da Resistência (R) do personagem e pode ter bônus(B) adiquirido de alguma vantagem, item mágico e etc. O cálculo é basicamente:
 
 \[ PVs = (R + B) \times 5 \]
 
@@ -161,11 +161,30 @@ Além da adição dos PVs negativos, também há a dificuldade em recuperar PVs.
 
 \subsection{Pontos de Magia}
 
-Pontos de Magia(PMs) representam a energia mágica, espiritual, física, ki, e etc do personagem, quando seu personagem atinge 0PMs fica incapaz de usar habilidades especiais.
+Pontos de Magia(PM) representam a energia mágica, espiritual, física, ou ki do personagem. Para ativar habilidades especiais ou lançar magias é necessário gastar PMs. Quando um personagem chega a 0PM, ele é fica incapaz de usar sua habilidades, não é possível ter PMs negativos. Assim como PVs, o personagem pode recuperar os PM's gastos, porém somente com itens e descanso.
+
+\begin{description}
+\item[Repouso] Descanso de 8 horas seguidas. Quando o personagem descansa dessa maneira ele recupera \( M/2 \) PMs. No minímo de 1PM.
+\item[Repouso completo] Descanso por 24 horas seguidas. Quando o personagem descansa dessa maneira ele recupera \( M \times 2 \) PMs.
+\end{description}
+
 
 \subsection{Pontos de Ação}
 
-Pontos de Ação (PAs) representam a sorte, a força de vontade sobrenatural ou qualquer coisa que permita seu personagem fazer do impossível, possível.
+Pontos de Ação (PA) representam a sorte, a força de vontade sobrenatural ou qualquer coisa que permita seu personagem fazer do impossível, possível. Os PAs não são influenciados por nenhum atributo, eles funcionam mais como sorte ou força de vontade ao máximo. Porém esses pontos são extremamente escassos e raros de se conseguir, todo personagem pode possuir no máximo 3 PAs. Na criação do personagem é normal atribuir aleatoriamente os PAs para os jogadores, jogue um dado, divida o resultado por 2 arredondado para baixo e no minímo de 1, esse é o valor de PA para o jogador. Assim, um jogador pode começar com 1PA ou no máximo 3PAs. Para saber como um jogador consegue mais PAs, veja no capítulo 'Recompensas' (pag. \pageref{ch:rewards}). Alguns exemplos que o personagem pode fazer com PAs:
+
+\begin{description}
+\item[Testes] Se o Mestre te solicitar um teste, você gastar 1PA para ter um bônus + 3 nesse teste. 
+\item[Falhas] Se caso falhar em um teste, você pode gastar 1PA para ter uma nova chance.
+\item[Critíco] Por 1PA você pode garantir um ataque ou defesa crítica.
+\item[Recuperação] Por 1PA você pode recuperar \(RX2\) Pvs ou \(MX2\) PMs.
+\end{description}
+
+Esses são alguns exemplos bem abrangentes, o Mestre e os Jogadores podem ter mais idéias de como utilizar os PA, mas sempre, com a aprovação do Mestre.
+
+\begin{framed}
+No 3D\&T clássico, no lugar de PAs, os jogadores tinham que gastar Pontos de Experiência para conseguir realizar essas tarefas extraordinárias. Enquanto uns acumulavam experiência para evoluir, outros gastavam para ajudar o grupo ou a si mesmo. Tendo momentos totalmente desquilibrados onde um jogador com 9 PEs poderia ter 9 criticos seguidos e ainda recuperar seus PVs. PAs com limite de 3, vem para impedir esse desiquilibrio e ainda permitir essa vantagem aos jogadores sem sacrificar a evolução deles. 
+\end{framed}
 
 \subsection{Força de Ataque}
 
@@ -178,3 +197,5 @@ Pontos de Ação (PAs) representam a sorte, a força de vontade sobrenatural ou 
 \subsection{Alcance de Poder de Fogo}
 
 \subsection{Tipo de Dano Especializado}
+
+\subsection{Experiência}
