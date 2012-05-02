@@ -124,13 +124,44 @@ Também não houve muitas mudanças, o alcance do ataque a distância foi reduzi
 
 \section{Atributos Secundários}
 
+Força, Habilidade, Resistência, Mente, Armadura e Poder de Fogo sãos o principais atributos para construção de um personagem, além deles, existem os Atributos Secundários, que são diretamente influenciados pelos atributos principais e podem ser aprimorados através de vantagens.
+
 \subsection{Pontos de Vida}
 
-Pontos de Vida(PVs) representam a vitalidade do personagem, quando seu personagem atinge 0PVs fica incapaz de lutar ou realizar alguma ação importante.
+Pontos de Vida(PVs) representam a vitalidade do personagem, ou seja, o quanto seu personagem resistirá a danos até ficar incapacitado de lutar. Os pontos de vida limite do personagem são calculados a partir da Resistência (R) do personagem e pode ter bônus(B) adiquirido de alguma vantagem, item mágico e etc. O cálculo é basicamente:
+
+\[ PVs = (R + B) \times 5 \]
+
+Personagens com R0 possuem 1Pv. Enquanto o personagem possuir pontos de vida ele pode agir normalmente. Os PVs quando perdidos, podem ser recuperados através itens de cura, magias, repouso ou tratamento médico. Enquanto a recuperação por magia o efeito é instantâneo, por meios naturais é mais demorado, precisando de dias para que o personagem fique totalmente recuperado. Existem dois tipos:
+
+\begin{description}
+\item[Repouso] Descanso de 8 horas seguidas. Quando o personagem descansa dessa maneira ele recupera \( R/2 \) PVs. No minímo de 1PV.
+\item[Repouso completo] Descanso por 24 horas seguidas. Quando o personagem descansa dessa maneira ele recupera \( R \times 2 \) PVs.
+\end{description}
+
+Um personagem ao recuperar seus PVs nunca deve ultrapassar seu limite, o limite de PVs só deve ser expandido com vantagens ou aumentando a resistência. {\bf Exemplo } Heryum é um guerreiro que possui R2 e 10PVs, decidiu viajar e durante a sua viagem foi atacado por ladrões, com muito sacrificio os ladrões foram derrotados e Heryum agora tem apenas 2PVs. Anoitece, ele procura um local seguro e dorme, nesse repouso ele recupera 1PV (\( R / 2 \)). Após acordar ele procura uma vila próxima para se recuperar melhor, por sorte ele encontra e vai direto para uma estalagem ficar em repouso absoluto. Após um dia de repouso absoluto ele recupera 4PVs(\( R \times 2 \)).
+
+Quando um personagem atinge a 0 Pvs ou menos, ele ficará incapacitado. É um dos momentos mais dramáticos para um personagem é quando ele está chegando perto da morte, por isso há algumas regras para esse momento. Um personagem que leva um dano que reduz seus PVs a zero ou menos, deve antes checar a sua resistência, se esse o dano absoluto que ultrapassou os Opvs for maior que a resistência ele permanecerá com esses PVs negativos, se não mantém-se com 0PVs. {\bf Exemplo } Um personagem com R2 e atualmente com 2PVs, recebeu 4 pontos de dano, o personagem ficaria com -2PVs (\( 2 -4 \) ). Porém, o valor absoluto de seus PVs negativos é 2, que não é maior que o valor da Resistência do personagem, portanto ao invés de -2PVs, o personagem ficará com 0PV. Se no mesmo caso o dano fosse 5, o personagem ficaria com -3PVs, esse valor em absoluto é maior que a resistência do personagem, portanto ele se manteria com seus -3PVs.
+
+Após o personagem ficar incapacitado, ele fica indefeso, e qualquer dano que o personagem levar agora subtrai normalmente dos seus PVs atuais. Para cada nível de dano abaixo dos 0PVs existe uma condição que o personagem se encontra.
+
+
+\begin{description}
+\item[Incapacitado] O personagem está nessa condição quando ele possui 0pv. Ele ainda pode falar, se rastejar e fazer ações extramente simples. Qualquer atitude acima disso ele ficará automaticamente com -1PV, portanto no próximo estágio Inconsciente.
+\item[Inconsciente] Um personagem inconsciente não tem muito o que fazer. Se ele sofrer algum dano, e o valor de seus PVs em absoluto for mario que o valor da sua Resistência, ele mudará a sua condição para Ferido.
+\item[Ferido] Nessa condição o personagem está morrendo, mas lentamente. A cada uma hora os PVs do personagem serão reduzidos em 1, até os PVs do personagem em valor absoluto ser maior que o valor da \( R \times 2 \). Quanto atinge esse nível, o personagem está Morrendo! A perícia Medicina pode impedir essa redução de PVs.
+\item[Morrendo] Nessa condição a vida do personagem se esvai muito mais depressa. Ele perde 1PV a cada minuto do jogo, até seus PVs em absoluto ser igual ao seus PVs. Quando isso acontece, seu personagem está morto. A perícia Medicina pode impedir essa redução de PVs.
+\item[Morto] Como o próprio nome diz, o seu personagem morreu. Ele pode voltar como um Fantasma, morto-vivo, seus companheiros podem te ressucitar, ou você pode criar um novo personagem para substituir esse que morreu.
+\end{description}
+
+\begin{framed}
+Sim! Pontos de Vida negativo! Antigamente para determinar se o personagem estava morto era pela sorte no dado, muitas vezes um golpe fulminante que deveria matar o personagem o mantinha vivo e um golpe simples poderia matar. Mudei essa regra para que a resistência e os PVs do personagem determinem sua condição. Não importa sua condição, a perícia medicina pode manter o personagem vivo.
+Além da adição dos PVs negativos, também há a dificuldade em recuperar PVs. No sistema antigo, bastava uma noite de sono para recuperar todos os PVs. Observando um pouco melhor vários animes, mangas, HQs, séries, filmes, e etc, é mais comum um personagem levar vários dias para se recuperar totalmente do que se recuperar espantosamente em uma única noite. A Resistência do personagem é fundamental para uma recuperação mais rápida.  
+\end{framed}
 
 \subsection{Pontos de Magia}
 
-Pontos de Magia(PMs) representam a energia mágica, espiritual, física, ki...etc do personagem, quando seu personagem atinge 0PMs fica incapaz de usar habilidades especiais.
+Pontos de Magia(PMs) representam a energia mágica, espiritual, física, ki, e etc do personagem, quando seu personagem atinge 0PMs fica incapaz de usar habilidades especiais.
 
 \subsection{Pontos de Ação}
 
