@@ -60,7 +60,7 @@ O atributo Resistência(R) representa condição física do seu personagem. Um a
 \item[PVs] Resistência contribui diretamente com os Pontos de Vida do Personagem, sendo:
 \[PVs = R \times 5 \]
 Personagens com R0, possuem 1PV.
-\item[Fadiga] Cada ponto de R equivale a um ponto de Fadiga.
+\item[Fadiga] \( Fadiga = R + 1 \).
 \item[Recuperação] Para cada dia de repouso o número de PVs recuperados é igual o seu valor de R. 
 \item[Testes] Muitas situações exigem que o personagem tenha uma condição física exemplar. Resistência é útil para resistir venenos, efeitos mágicos, dores, mais tempo acordado, caminhar e correr por mais tempo, etc.
 \end{description}
@@ -220,10 +220,40 @@ O resto funciona praticamente igual a FA, rola-se um dado para ter a FD final, s
 
 \subsection{Fadiga}
 
+Fadiga representa condição física do personagem, seu valor é igual a \( R + 1 \) do personagem. Parecido com PVs e PMs, o personagem pode perder pontos de Fadiga. Se um personagem atingir 0 pontos de Fadiga ele ficará cansado. Um personagem cansado sofre um redutor de -1 em todos testes e -2 em todas jogadas de FA e FD. Para cada hora que o personagem estiver cansado, deve realizar um teste de Resistência de dificuldade \( 4 + horas  \) para se manter acordado. A cada uma hora de descanso o personagem recupera 1 ponto de Fadiga.
+
+\begin{framed}
+No sistema 3D\&T não havia uma variável específica para medir o cansaço de um personagem. O personagem poderia perder PVs ou falhar em testes para simular o cansaço. Fadiga também funciona como um PVs diferente, PVs para um combate não letal, muito usado quando o pesonagem tem que sobreviver a tranquilizantes, imobilização, golpes surpresas e etc.
+\end{framed}
+
+
 \subsection{Velocidade}
+Em combate o personagem move-se:
+\[ Velocidade = (H \times 10m/s) \]
+Personagens com H0, movem a 5m\/s. Para longas corridas ou longas jornadas, depende também da resistência do personagem, veja no capítulo "A Aventura"(pág. \pageref{ch:adventure}) 
 
 \subsection{Alcance de Poder de Fogo}
+O alcance do ataque a distância em metros será:
+\[ Alcance = PdF \times 20 \]
+Mesmo que o PdF de um personagem não seja suficiente para atingir a distância desejada, ele pode realizar o ataque com redutor na FA. O redutor é de -2 na FA, para cada pontos de diferença para o PdF necessário. Exemplo: Um personagem com PdF2 quer atacar um personagem a 80 metros, porém para atingir a 80 metros sem redutor é necessário PdF 4, logo diferença é 2 pontos, portanto o redutor na FA será de -4.
 
 \subsection{Tipo de Dano Especializado}
+Todo personagem que possui algum treinamento em combate deve decidir qual tipo dano ele foi treinado, portanto especializado. Os atributos que representam o treinamento em combate é Força e Poder de Fogo, sendo assim, para escolher o dano especializado o personagem é obrigatorio ter pelo menos um ponto em algum desses atributos. O dano especilizado é independete de atributo, portanto um personagem pode escolher "Corte" para Força e "Fogo" para Poder de Fogo.
+
+\begin{description}
+\item[Corte] Garras, espadas, machados, foices ou qualquer coisa afiada que produza um corte.
+\item[Esmagamento] Socos, chutes, golpes de maça, martelos ou lançamento de pedras, rochas, armas que causam explosão. Golpes que tem o efeito de quebrar ou amassar.
+\item[Perfuração] Agulhas, florete, lanças, flechas, pistolas, metralhadoras...
+\item[Fogo] Lança-chamas, tochas, bolas de fogo...
+\item[Químico] Fumaça, ácido, veneno...
+\item[Sônico] Vento, som...
+\item[Gelo] Raio congelante, bola de neve...
+\item[Eletricidade] Relâmpagos, raios...
+\item[Energia] Qualquer coisa que não se encaixe muito bem nos outros tipos de danos. Lançamento de esferas de energia do DBZ, hadouken do Ryu, sabre de luz, armas que disparam energia...
+\end{description}
+
+Quando um personagem decide atacar com um Tipo de Dano que não é especializado, ele sofre um redutor de FA -2.
 
 \subsection{Experiência}
+
+Pontos Experiência (PE) serve para evoluir seu personagem, a cada 10 PEs o personagem pode trocar para um ponto de personagem. Um personagem recém criado começa com 0 PEs. Os PEs são conquistados sempre ao final de cada aventura, veja mais no Capítulo "Recompensas" (pág. \pageref{ch:rewards}).
