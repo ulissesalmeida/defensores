@@ -40,32 +40,49 @@ Um teste possui um valor de "dificuldade", um personagem para passar no teste o 
 
 Dependendo do momento, o jogador pode ao invés de rolar o dado pode escolher um valor. Imagine que o teste serve para ações importantes, únicas e/ou imediatas. Por exemplo, "quebrar uma porta durante uma perseguição", exige teste, enquanto ao explorar uma masmorra o personagem deseja derrubar uma porta, como ele não tem pressa, ele decide ficar ali vários minutos tentando derruba-la (ou seja, como se tivesse fazendo vários testes até conseguir), então evite esses testes repetitivos e assume que o resultado da rolagem do dado foi 6, se mesmo assim o personagem não conseguir derrubar a porta, ficará claro que é impossível.
 
+Um nível base de dificuldade para um teste é 4, para dificuldades maiores acrescente o valor do minímo de atributo necessário para realizar o teste. Por exemplo, o Mestre julga que para ter alguma chance de escapar da armadilha de foices o personagem teria que no minímo H2, então a dificuldade será 6 (\(4 + 2 \))
+
 Os principais testes são:
 
 \begin{description}
-\item[Atributos]
-\item[Perícias]
-\item[Disputas]
+\item[Atributos] O Mestre decidirá qual atributo deve ser testado seguindo os conselhos na descrição de cada atributo. O teste de atributo é "1d + Valor do Atributo".
+\item[Perícias] Cada perícia tem um atributo chave e bônus provenientes de várias, então o teste é "1d + Valor do Atributo + Bõnus".
+\item[Disputas] As vezes os personagens tomará alguma ação que entrará em conflito com outro personagem, quando isso acontece, um teste de disputa é realizado. Os personagens que realizam seus testes, o personagem com maior resultado vence. Imagine que dois personagens estão brincando de "cabo de força", ambos realizam o teste de Força, ganha que obtiver o maior resultado ganha, em caso de empate joga-se novamente.
 \end{description}
 
 \section{Pertences inciais}
+É comum que todo personagem possua pertences iniciais, desde roupas, armas, equipamento e dinheiro!
 \subsection{Dinheiro}
-\subsection{Equipamentos}
+O dinheiro é importante para comprar poções, armas, equipamentos... Mas não necesseriamente fundamental. O Mestre pode decidir que o dinheiro é totalmente secundário na aventura. Dependendo do mundo do jogo, o dinheiro é contado de forma diferente, enquanto na fantasia medieval temos peças de ouro, prata e bronze, na atualiade temos o dólar, real, euro. A decisão de como funciona economia do mundo é do Mestre, aqui segue um exemplo de como poderia funcionar:
 
-\section{Locais}
+Para personagens recém criados considere que o dinheiro será \( (N/2) \times 100 \). Esse é o valor padrão, considere os seguintes modificadores:
+
+\subsection{Equipamentos}
+A partir da descrição do personagem já possível saber quais sãos seus itens portanto dispensa anotações ou compra, por exemplo calças, roupas íntimas, armas iniciais, luvas, celular, cigarros, mochila, canivete... Por exemplo, um personagem executivo com certeza anda com um celular, explorador com sua bussola e por ai vai. Qualquer item exótico e simples para o seu personagem deve ser aprovado pelo Mestre. Enfim, o Mestre pode exigir que os personagens comprem equipamentos através de dinheiro. Em "Recompensas"(pág. \pageref{ch:reward}) há uma série de itens interessantes que o personagem pode adiquirir com dinheiro.
 
 \section{Movimento}
+O movimento básico já foi descrito, em combate o personagem se move a \( H \times 10m/s \). Porém para outros movimentos mais desgastantes, o personagem depende também da resistência. Personagens incansáveis como construtos e mortos-vivos nunca dependem da resistência.
 \begin{description}
-\item[Voando]
+\item[Voando] A velocidade do personagem voando em combate é 
+\[ vVôo = V + (V/2) \]
+Exemplo: Um personagem com H2, possui velocidade normal de 20m/s. Em vôo ele terá uma velocidade de 30m/s(\( 20 + (20/2) \)).
+O alcance em altura de vôo do personagem é \( vVôo \times 2 \) em metros. Um personagem com H2, possui alcance em altura em vôo de 60 metros (\( 30 \times 2 \)).
 \item[Correndo]
-\item[Viajando]
+Um personagem que escolha se manter em movimento por mais de 2 turnos(ou periodo relativamente longo), ele é limitado por sua Resistência no cálculo de velocidade. Por exemplo, o personagem com H2 e R1 persegue um inimigo, seu movivomento inicial é de 20m/s, após algum tempo sua velocidade diminui para 10m/s devido a sua R1, se ele tivesse R2, poderia manter a mesma velocidade. Esse fator de diminuição de velocidade, serve para vôo também.
+
+Um personagem consegue se manter na velocidade de sua Resistência por \( (R+1) \times 10min \). Após ultrapassar esse limite, se o personagem quiser manter corrida ele perderá 1 ponto de fadiga para cada 10 minutos além do seu limite. O personagem pode voltar a correr sem perder pontos de fadiga após uma hora de descanso.
+
+\item[Jornadas] Para longas jornadas, ou seja, viagens, os personagems caminham. A velocidade depende da Habilidade porém é limitada pela resistência, e o cálculo é \( H \times 10km/h \). Portanto um personagem que com H2 e R1, viaja a 10km/h (\( 1 \times 10 \)). Personagens com R0 ou H0 é 5km/h.
+
+O número de horas que o personagem pode viajar é \( R + 8 \). Após esse limite, para cada hora forçada, o personagem perde um 1 ponto de fadiga. 
+
 \item[Nadando]
 \item[Escalando]
 \end{description}
 
 \section{Privações}
 \begin{description}
-\item[Respiração]
-\item[Alimentação]
-\item[Sono]
+\item[Respiração] 3 minutos
+\item[Alimentação] 20 dias sem comer, 3 dias sem água
+\item[Sono] 3 dias sem dano
 \end{description}
