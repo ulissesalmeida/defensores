@@ -63,12 +63,11 @@ A partir da descrição do personagem já possível saber quais sãos seus itens
 \section{Movimento}
 O movimento básico já foi descrito, em combate o personagem se move a \( H \times 10m/s \). Porém para outros movimentos mais desgastantes, o personagem depende também da resistência. Personagens incansáveis como construtos e mortos-vivos nunca dependem da resistência.
 \begin{description}
-\item[Voando] A velocidade do personagem voando em combate é 
-\[ vVôo = V + (V/2) \]
-Exemplo: Um personagem com H2, possui velocidade normal de 20m/s. Em vôo ele terá uma velocidade de 30m/s(\( 20 + (20/2) \)).
-O alcance em altura de vôo do personagem é \( vVôo \times 2 \) em metros. Um personagem com H2, possui alcance em altura em vôo de 60 metros (\( 30 \times 2 \)).
+\item[Voando] A velocidade do personagem voando em combate é igual a velocidade normal.
+Exemplo: Um personagem com H2, possui velocidade normal de 20m/s. Em vôo ele terá uma velocidade de 20m/s também.
+O alcance em altura de vôo do personagem é \( Velocidade \times 4 \) em metros. Um personagem com H2, possui alcance em altura em vôo de 80 metros (\( 20 \times 4 \)).
 \item[Correndo]
-Um personagem que escolha se manter em movimento por mais de 2 turnos(ou periodo relativamente longo), ele é limitado por sua Resistência no cálculo de velocidade. Por exemplo, o personagem com H2 e R1 persegue um inimigo, seu movivomento inicial é de 20m/s, após algum tempo sua velocidade diminui para 10m/s devido a sua R1, se ele tivesse R2, poderia manter a mesma velocidade. Esse fator de diminuição de velocidade, serve para vôo também.
+"Correndo" é o estado quando o personagem se mantém em movimento por um longo tempo, os efeitos de cansaço se aplicam para qualquer tipo de movimento. Se manter em movimento por mais de 2 turnos(ou periodo relativamente longo), ele é limitado por sua Resistência no cálculo de velocidade. Por exemplo, o personagem com H2 e R1 persegue um inimigo, seu movivomento inicial é de 20m/s, após algum tempo sua velocidade diminui para 10m/s devido a sua R1, se ele tivesse R2, poderia manter a mesma velocidade. Esse fator de diminuição de velocidade, serve para vôo também.
 
 Um personagem consegue se manter na velocidade de sua Resistência por \( (R+1) \times 10min \). Após ultrapassar esse limite, se o personagem quiser manter corrida ele perderá 1 ponto de fadiga para cada 10 minutos além do seu limite. O personagem pode voltar a correr sem perder pontos de fadiga após uma hora de descanso.
 
@@ -76,13 +75,24 @@ Um personagem consegue se manter na velocidade de sua Resistência por \( (R+1) 
 
 O número de horas que o personagem pode viajar é \( R + 8 \). Após esse limite, para cada hora forçada, o personagem perde um 1 ponto de fadiga. 
 
-\item[Nadando]
-\item[Escalando]
+\item[Nadando] A velocidade de nado base do personagem é a metade da velocidade de combate. Possui os mesmos efeitos de cansaço do estado "Correndo".
+\item[Escalando] A velocidade de escalada do personagem é u quarto da velocidade de combate. Possui os mesmos efeitos de cansaço do estado "Correndo".
 \end{description}
 
+Não importa o movimento, o personagem pode reduzir sua velocidade pela metade para dobrar o tempo antes de sentir o cansaço. 
+
 \section{Privações}
+Não só batalhas e armadilhas são obstáculos para um personagem, muitas vezes ele pode ser vítima de privações comuns. Personagens construtos e mortos-vivos são imunes a essas privações comuns.
+
 \begin{description}
-\item[Respiração] 3 minutos
-\item[Alimentação] 20 dias sem comer, 3 dias sem água
-\item[Sono] 3 dias sem dano
+
+\item[Respiração] Um personagem pode ficar sem respirar igual a \( (R+1) \times 3 minutos \). Após esse tempo limite o personagem começa a perder 1Pv por turno até a morte.
+
+\item[Alimentação] Alimentação é um pouco mais complicado. Um personagem consegue ficar \( R + 3 dias \) sem beber água e comer. Se o personagem ficar apenas sem comer mas ainda com acesso a água ele consegue ficar \( R + 20 dias \) sem comer.
+Após o limite, o personagem ficara muito mal de saúde, sofrendo um redutor de temporário de -1 em todos atributos. Esse redutor é cumulativo para cadia adicional sem alimentação. O personagem morrerá de fome se em algum momento  o redutor em sua Resistência alcançar um valor negativo.
+Para o personagem se recuperar totalmente precisa se alimentar normalmente por pelo menos metade dos dias que ficou passando fome.
+\item[Sono] Após o limite \( R + 16 \) horas se o personagem estiver em alguma atividade monótona (ficar em guarda, sentando no escritório escrevendo algo...) ele terá que realizar testes de Mente para se manter concentrado e acordado. A dificuldade é \(4 + horas \) após o limite, se falhar ira cochilar por 10 minutos, podendo realizar uma nova tentativa, se falhar dormirá.
+
+As vezes o personagem é forçado a ficar acorado, ele conseguirá se manter acordado sem danos mentais por \( R + 3 dias \). Após esse limite o personagem ficará com um redutor cumulativo de -1 em Mente para cadia que se manter acordado sem pelo menos 8 horas seguidas de sono. Se algum momento o atributo Mente chegar a 0, ele corre o risco de adiquirir alguma insanidade, se alcançar um valor negativo ele entrará em coma e poderá morrer.
+
 \end{description}
